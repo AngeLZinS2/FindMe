@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="pt">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Login​">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="index.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 7.3.1, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Lobster:400">
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+    <!-- Adicionando Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- SDK do Google -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- SDK do Facebook -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v16.0&appId=SEU_APP_ID_FACEBOOK&autoLogAppEvents=1" nonce="NONCE"></script>
+    <style>
+        /* Estilos para o pop-up de login */
+        .u-dialog-section-7 .u-dialog-1 {
+            width: 400px; /* Largura fixa para o pop-up */
+            min-height: auto; /* Altura automática */
+            margin: 20px auto; /* Centraliza o pop-up */
+            padding: 20px;
+            display: flex;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .u-dialog-section-7 .u-container-layout-1 {
+            padding: 20px;
+        }
+
+        .u-dialog-section-7 .u-text-1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .u-form-1 {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .u-form-group {
+            margin-bottom: 15px;
+        }
+
+        .u-label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .u-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .u-btn-submit {
+            width: 100%;
+            padding: 10px;
+            background-color: #478ac9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .u-btn-submit:hover {
+            background-color: #366fa3;
+        }
+
+        .u-social-login {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .u-social-login button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Espaçamento entre ícone e texto */
+        }
+
+        .u-google-login {
+            background-color: #db4437;
+        }
+
+        .u-facebook-login {
+            background-color: #1877f2;
+        }
+
+        .u-social-login button:hover {
+            opacity: 0.9;
+        }
+
+        .u-text-small {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .u-link {
+            color: #478ac9;
+            text-decoration: none;
+        }
+
+        .u-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para o botão de fechar */
+        .u-dialog-close-button {
+            position: top right;
+            width: 30px;
+            top:10px;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        }
+    </style>
+</head>
+<body data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="true" class="u-body u-xl-mode" data-lang="pt">
+    <header class="u-black u-box-shadow u-clearfix u-header u-sticky-c2fe u-header" id="header">
+        <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+            <a href="./" data-page-id="547307096" class="u-image u-logo u-image-1" data-image-width="200" data-image-height="200" title="Home">
+                <img src="images/Preview1.jpg" class="u-logo-image u-logo-image-1">
+            </a>
+            <h6 class="u-custom-font u-font-merriweather u-hidden-sm u-hidden-xs u-hover-feature u-text u-text-default-xl u-text-1">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-dialog-link u-hover-none u-none u-text-white u-btn-1" href="#popup-cliente"> Área Cliente </a>
+            </h6>
+            <h6 class="u-custom-font u-font-lobster u-hidden-sm u-hidden-xs u-hover-feature u-text u-text-default-lg u-text-default-xl u-text-2">
+                <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-custom-font u-dialog-link u-font-merriweather u-hover-none u-none u-text-white u-btn-2" href="#popup-1f49">Área Vendedor </a>
+            </h6>
+            <h6 class="u-custom-font u-font-merriweather u-hidden-sm u-hidden-xs u-hover-feature u-text u-text-default u-text-3" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">
+                <a class="u-active-none u-btn u-button-style u-hover-feature u-hover-none u-none u-btn-3" href="Eventos.html" data-page-id="153617164" title="Eventos"> Eventos </a>
+            </h6>
+        </div>
+    </header>
+
+    <!-- Seção do Vídeo de Fundo -->
+    <section class="u-border-2 u-border-grey-75 u-clearfix u-uploaded-video u-video u-section-1" id="block-3">
+        <div class="u-background-video u-expanded">
+            <div class="embed-responsive">
+                <video class="embed-responsive-item" data-autoplay="1" loop="" muted="1" autoplay="autoplay" playsinline="">
+                    <source src="files/Canon EOS R6 Low Light Video ｜ 4K Cinematic Nightclub.mp4" type="video/webm">
+                    <p>Seu navegador não suporta vídeos HTML5.</p>
+                </video>
+            </div>
+            <div class="u-video-shading"></div>
+        </div>
+        <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
+
+    <!-- Modal da Área Promoter -->
+    <section class="u-align-center u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-valign-middle u-dialog-section-7" id="popup-1f49">
+        <div class="u-align-center u-border-1 u-border-white u-container-style u-dialog u-radius-5 u-shape-round u-white u-dialog-1">
+            <div class="u-container-layout u-container-layout-1">
+                <h2 class="u-text u-text-default u-text-1">Acessar Area Promoter</h2>
+                <form id="login-form" class="u-form u-form-1">
+                    <div class="u-form-group">
+                        <label for="email" class="u-label">E-mail</label>
+                        <input type="email" id="email" name="email" class="u-input" required>
+                    </div>
+                    <div class="u-form-group">
+                        <label for="password" class="u-label">Senha</label>
+                        <input type="password" id="password" name="password" class="u-input" required>
+                    </div>
+                    <div class="u-form-group">
+                        <button type="submit" class="u-btn u-btn-submit">Entrar</button>
+                    </div>
+                    <div class="u-social-login">
+                        <!-- Botão de Login com Google -->
+                        <div id="g_id_onload"
+                             data-client_id="SEU_CLIENT_ID_AQUI"
+                             data-callback="handleGoogleLogin">
+                        </div>
+                        <div class="g_id_signin"
+                             data-type="standard"
+                             data-size="large"
+                             data-theme="outline"
+                             data-text="sign_in_with"
+                             data-shape="rectangular"
+                             data-logo_alignment="left">
+                        </div>
+                        <!-- Botão de Login com Facebook -->
+                        <button type="button" class="u-facebook-login" onclick="loginWithFacebook()">
+                            <i class="fab fa-facebook-f"></i> Login com Facebook
+                        </button>
+                    </div>
+                    <div class="u-form-group">
+                        <p class="u-text-small">Não tem uma conta? <a href="#" class="u-link">Cadastre-se</a></p>
+                    </div>
+                </form>
+            </div>
+            <button class="u-dialog-close-button u-icon u-text-grey-50 u-icon-1">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 413.348 413.348" style="">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1ce9"></use>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 413.348 413.348" id="svg-1ce9">
+                    <path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal da Área Cliente -->
+    <section class="u-align-center u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-valign-middle u-dialog-section-7" id="popup-cliente">
+        <div class="u-align-center u-border-1 u-border-white u-container-style u-dialog u-radius-5 u-shape-round u-white u-dialog-1">
+            <div class="u-container-layout u-container-layout-1">
+                <h2 class="u-text u-text-default u-text-1">Acessar Área Cliente</h2>
+                <form id="login-form-cliente" class="u-form u-form-1">
+                    <div class="u-form-group">
+                        <label for="email-cliente" class="u-label">E-mail</label>
+                        <input type="email" id="email-cliente" name="email" class="u-input" required>
+                    </div>
+                    <div class="u-form-group">
+                        <label for="password-cliente" class="u-label">Senha</label>
+                        <input type="password" id="password-cliente" name="password" class="u-input" required>
+                    </div>
+                    <div class="u-form-group">
+                        <button type="submit" class="u-btn u-btn-submit">Entrar</button>
+                    </div>
+                    <div class="u-social-login">
+                        <!-- Botão de Login com Google -->
+                        <div id="g_id_onload_cliente"
+                             data-client_id="SEU_CLIENT_ID_AQUI"
+                             data-callback="handleGoogleLogin">
+                        </div>
+                        <div class="g_id_signin"
+                             data-type="standard"
+                             data-size="large"
+                             data-theme="outline"
+                             data-text="sign_in_with"
+                             data-shape="rectangular"
+                             data-logo_alignment="left">
+                        </div>
+                        <!-- Botão de Login com Facebook -->
+                        <button type="button" class="u-facebook-login" onclick="loginWithFacebook()">
+                            <i class="fab fa-facebook-f"></i> Login com Facebook
+                        </button>
+                    </div>
+                    <div class="u-form-group">
+                        <p class="u-text-small">Não tem uma conta? <a href="#" class="u-link">Cadastre-se</a></p>
+                    </div>
+                </form>
+            </div>
+            <button class="u-dialog-close-button u-icon u-text-grey-50 u-icon-1">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 413.348 413.348" style="">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1ce9"></use>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 413.348 413.348" id="svg-1ce9">
+                    <path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <script>
+        // Função para lidar com o login do Google
+        function handleGoogleLogin(response) {
+            console.log('Resposta do Google:', response);
+            const token = response.credential; // Token JWT
+
+            // Enviar o token para o backend
+            fetch('/seu-endpoint-backend', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ token: token }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Resposta do backend:', data);
+                if (data.success) {
+                    alert('Login bem-sucedido!');
+                    window.location.href = '/dashboard'; // Redirecionar para a página de dashboard
+                } else {
+                    alert('Erro no login. Tente novamente.');
+                }
+            })
+            .catch(error => {
+                console.error('Erro ao enviar token:', error);
+                alert('Erro no servidor. Tente novamente.');
+            });
+        }
+
+        // Função para login com Facebook
+        function loginWithFacebook() {
+            FB.login(function(response) {
+                if (response.authResponse) {
+                    console.log('Usuário logado com Facebook:', response);
+                    const accessToken = response.authResponse.accessToken;
+
+                    // Enviar o token para o backend
+                    fetch('/seu-endpoint-backend', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ token: accessToken }),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Resposta do backend:', data);
+                        if (data.success) {
+                            alert('Login bem-sucedido!');
+                            window.location.href = '/dashboard'; // Redirecionar para a página de dashboard
+                        } else {
+                            alert('Erro no login. Tente novamente.');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erro ao enviar token:', error);
+                        alert('Erro no servidor. Tente novamente.');
+                    });
+                } else {
+                    console.log('Login com Facebook cancelado.');
+                }
+            }, { scope: 'email' }); // Solicitar permissão para o e-mail do usuário
+        }
+
+        // Inicialização do SDK do Facebook
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '1350153212967035', // Substitua pelo seu App ID
+                cookie: true,
+                xfbml: true,
+                version: 'v16.0'
+            });
+        };
+    </script>
+</body>
+</html> 
